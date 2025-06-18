@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'font1';
+	font-weight: 100;
+	font-display: auto;
+	src: url('../font/alk-tall-nusxuri.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'font1';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.096);
+    position: sticky;
+    top:0;
+    border-bottom: 2px solid rgb(237,131,17);
+
+    z-index: 10;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    gap:60px;
+    list-style: none;
+}
+
+header h1 a{
+    color: rgb(237,131,17);
+    font-size: 40px;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+header h1 a:hover{
+    letter-spacing: 1px;
+}
+header ul a{
+    text-decoration: none;
+    font-size: 32px;
+    color: rgb(75, 75, 75);
+    transition: 0.3s ease;
+}
+header ul a:hover{
+    color: rgb(237,131,17);
+}
+header h2 a{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(30deg,rgb(253, 206, 155),rgb(255, 132, 0));
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 0px rgba(255, 132, 0, 0.322);
+    padding: 3px;
+    border-radius: 5px;
+}
+header h2{
+    position: absolute;
+    top:65px;
+    display: none;
+    
+    font-weight: 100;
+}
+.active{
+    color:rgb(237,131,17);
+}
+@media (max-width:700px){
+    header h2{
+        display: block;
+    }
+    header h2 a{
+        font-size: 25px;
+    }
+    header h1{
+        display: none;
+    }
+    header{
+        padding: 20px 30px;
+        justify-content: center;
+    }
+    header ul{
+        gap:20px;
+    }
+    header ul a{
+        font-size:25px;
+    }
+}
+
+
+
+
+footer{
+    background-color: rgb(20, 20, 20);
+    padding: 30px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border-top:2px solid rgb(237,131,17);
+}
+
+footer .icons{
+    display: flex;
+    gap:10px;
+    list-style: none;
+}
+
+footer .icons img{
+    width: 30px;
+    transition: 0.3s ease;
+}
+footer .icons img:hover{
+    transform: translateY(-3px);
+}
+
+footer .footer-info p{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+    color:white;
+    font-family: 'Abril Fatface';
+}
+@media (max-width:700px){
+    footer{
+        padding: 10px 20px;
+        align-items: start;
+    }
+    footer .icons{
+        flex-direction: column;
+        gap:5px;
+    }
+}
+
+
+
+.dark{
+    background-color: black;
+    color:white;
+}

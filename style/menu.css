@@ -1,0 +1,73 @@
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    font-size: 100px;
+    margin-top:10px;
+}
+.articles{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+    margin-top:40px;
+}
+article{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+article div{
+    font-size: 50px;
+}
+article div h2{
+    font-size: 40px;
+}
+article div h2 span{
+    font-size: 20px;
+    color: rgb(237,131,17);
+}
+article img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+.sasmelebi{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+.sasmelebi h2{
+    font-size: 60px;
+    font-weight: 100;
+}
+.sasmelebi p{
+    font-size: 30px;
+}
+.sasmelebi div{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    margin-top:20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(237,131,17);;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+button:hover{
+    opacity: 0.7;
+}
+button:active{
+    opacity: 1;
+}

@@ -1,0 +1,35 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+    padding: 10px 50px;
+}
+main h2{
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+.about-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+}
+.about-images img{
+    width: 350px;
+}
+
+main .istoria {
+    font-size: 18px;
+    width: 80%;
+    margin-bottom: 50px;
+}
+main .istoria p{
+    font-family: helvetica;
+}
+main .istoria h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
